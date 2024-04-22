@@ -54,3 +54,6 @@ int main()
     cudaFreeHost(C);
     return 0;
 }
+//to run the program 
+//nvcc -o program_name program_name.cu
+// ./program_name
