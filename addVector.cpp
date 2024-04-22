@@ -1,8 +1,10 @@
 #include <iostream>
 #include <cuda_runtime.h>
 #include / usr / local / cuda / include / cuda_runtime.h
+//global function that defines the function is global
 _global_void addVectors(int *A, int *B, int *C, int n)
 {
+    // specify the global index of the thread in the given block
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     if (i < n)
     {
